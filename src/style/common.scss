@@ -1,0 +1,158 @@
+@import '../uni.scss';
+
+$text-gray: $uni-text-color-grey;
+$text-red: $uni-color-error;
+$text-green: $uni-color-success;
+$text-blue: $uni-color-primary;
+
+.text {
+  &--gray {
+    color: $text-gray;
+  }
+
+  &--red {
+    color: $text-red;
+  }
+
+  &--green {
+    color: $text-green;
+  }
+
+  &--blue {
+    color: $text-blue;
+  }
+}
+
+.ellipsis {
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+.ellipsis {
+  &__line-1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__line-2 {
+    @include ellipsis(2);
+  }
+  &__line-3 {
+    @include ellipsis(3);
+  }
+  &__line-4 {
+    @include ellipsis(4);
+  }
+}
+
+page,
+view {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: unset;
+  line-height: unset;
+  overflow: hidden;
+  border-radius: 0;
+
+  &::after {
+    border: none;
+  }
+}
+
+button[disabled] {
+  background-color: #fff;
+  color: unset;
+}
+
+button[type='default'] {
+  color: unset;
+  background-color: #fff;
+}
+
+// 边框0.5px
+.border-half {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #dfdede; // 设计稿的值：f1f1ed     dfdede
+    transform-origin: 0 0;
+    transform: scale(0.5);
+  }
+}
+
+@mixin line-common {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+// 0.5px的线
+.line-half {
+  position: relative;
+
+  &::after {
+    @include line-common;
+    border-top: 1px solid #f1f1ed;
+  }
+}
+
+.line-half-bottom {
+  position: relative;
+  &::after {
+    @include line-common;
+    border-bottom: 1px solid #f1f1ed;
+  }
+}
+.line-half-right {
+  position: relative;
+  &::after {
+    @include line-common;
+    border-right: 1px solid #f1f1ed;
+  }
+}
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  height: 66px;
+  background: #ffffff;
+}
+/*定义滚动条轨道
+  内阴影+圆角*/
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ffffff;
+}
+/*定义滑块
+  内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e6e8ed;
+}

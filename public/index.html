@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0, user-scalable=no"
+    />
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script> -->
+    <!-- <script src="https://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script> -->
+    <script>
+      // init vConsole
+      // var vConsole = new VConsole();
+    </script>
+    <link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
+    <script src="https://cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js"></script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong></strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    var MAX_REM_WIDTH = 550;
+    // 有一个问题，app预加载中不会触发DOMContentLoaded，初始拿不到document的clientWidth
+    function setFontSize() {
+      var width = Math.min(document.documentElement.clientWidth || screen.availWidth, MAX_REM_WIDTH);
+      document.documentElement.style.fontSize = width / 20 + 'px';
+    }
+    setFontSize();
+    document.addEventListener('DOMContentLoaded', setFontSize);
+    var coverSupport =
+      'CSS' in window &&
+      typeof CSS.supports === 'function' &&
+      (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'));
+    document.write(
+      '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') +
+        '" />'
+    );
+    // 禁止手指放大
+    document.addEventListener('gesturestart', function(event) {
+      event.preventDefault();
+    });
+    // 禁用双击放大
+    var lastTouchEnd = 0;
+    document.documentElement.addEventListener(
+      'touchend',
+      function(event) {
+        var now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      },
+      {
+        passive: false,
+      }
+    );
+    // 禁止iOS 上拉边界下拉出现白色空白
+    // document.body.addEventListener(
+    //   'touchmove',
+    //   function(e) {
+    //     if (e._isScroller) return;
+    //     // 阻止默认事件
+    //     e.preventDefault();
+    //   },
+    //   {
+    //     passive: false,
+    //   }
+    // );
+  </script>
+</html>

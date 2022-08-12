@@ -1,0 +1,76 @@
+@text-gray: #a1a1a3;
+@text-red: #eb4b35;
+@text-green: #35bf10;
+@text-blue: #3073f4;
+@text-pink: #f25959;
+
+.text {
+  &--gray {
+    color: @text-gray;
+  }
+  &--red {
+    color: @text-red;
+  }
+  &--green {
+    color: @text-green;
+  }
+  &--blue {
+    color: @text-blue;
+  }
+  &--pink {
+    color: @text-pink;
+  }
+}
+
+.ellipsis {
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 边框0.5px
+.border-half {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 0.5px solid #dfdede; // 设计稿的值：f1f1ed     dfdede
+    transform-origin: 0 0;
+    transform: scale(0.5);
+  }
+}
+
+// 0.5px的线
+.line-half {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.5px solid #f1f1ed;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+.line-half-black {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 0.5px solid #47433A;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "pages": [
+    {
+      "path": "pages/appGuide/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下",
+        "navigationBarBackgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/upgrade/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/wxGuide/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/interactWall/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "我想对潭州说",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/topicInteract/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "话题互动",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/prizeWall/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "我想对潭州说",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/creator/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "创作者中心",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/staticPage/piece-rule",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "碎片规则"
+      }
+    },
+    {
+      "path": "pages/complaintReport/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "举报投诉"
+      }
+    },
+    {
+      "path": "pages/privacyPolicy/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "隐私政策"
+      }
+    },
+    {
+      "path": "pages/userAgreement/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "用户协议"
+      }
+    },
+    {
+      "path": "pages/sdkDetail/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "SDK详情"
+      }
+    },
+    {
+      "path": "pages/pieces/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "知识碎片中心"
+      }
+    },
+    {
+      "path": "pages/pieces/detail-my",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "碎片明细"
+      }
+    },
+    {
+      "path": "pages/pieces/exchange-my",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "我的兑换"
+      }
+    },
+    {
+      "path": "pages/pieces/goods-detail-order",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "兑换详情"
+      }
+    },
+    {
+      "path": "pages/pieces/goods-detail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "商品详情"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/artFestival/cultureDetails/details",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "第四届文化艺术节作品详情"
+      }
+    },
+    {
+      "path": "pages/artFestival/inviteFriends/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "邀请好友"
+      }
+    },
+    {
+      "path": "pages/acceptInvita/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "邀请好友"
+      }
+    },
+    {
+      "path": "pages/acceptInvita/result",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "邀请好友"
+      }
+    },
+    {
+      "path": "pages/artFestival/branchVenue/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "第四届文化艺术节"
+      }
+    },
+    {
+      "path": "pages/artFestival/mainVenue/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "第四届文化艺术节",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/artFestival/incentives/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "更多奖励",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/downLoadPage/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "下载APP"
+      }
+    },
+    {
+      "path": "pages/poster/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下"
+      }
+    },
+    {
+      "path": "pages/downLoadPage/copy",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下"
+      }
+    },
+    {
+      "path": "pages/richVIew/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "文章详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/content/PostDetail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "帖子详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/content/AnswerDetail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "答案详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/content/QuestionDetail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "问答详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/content/MoodDetail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "动态详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/content/ArticleDetail",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "文章详情",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/jumpWeixin/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "Get一下",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/HWYGuide/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "天声嘉音-为你开声",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    },
+    {
+      "path": "pages/hwyQuestionnaire/index",
+      "style": {
+        "titleNView": false,
+        "navigationBarTitleText": "参与调研领取免费小课",
+        "navigationBarBackgroundColor": "#fff100"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Get一下",
+    "navigationBarBackgroundColor": "#fff100",
+    "backgroundColor": "#fff100"
+  }
+}

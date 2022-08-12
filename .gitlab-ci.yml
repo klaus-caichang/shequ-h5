@@ -1,0 +1,4 @@
+include:
+  - project: 'om/devops/cicd-entrypoint'
+    ref: master
+    file: '/cicd_entrypoint.yml'
